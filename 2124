@@ -1,0 +1,16 @@
+/**
+ * Given a string s consisting of only the characters 'a' and 'b',
+ * return true if every 'a' appears before every 'b' in the string.
+ * Otherwise, return false.
+ * 
+ * @param {string} s - Input string
+ * @returns {boolean} - True if every 'a' appears before every 'b', otherwise false
+ */
+var checkString = function(s) {
+    return s.split('').sort().join('') === s ? true : false;
+};
+
+// Example usage:
+// console.log(checkString("aaabbb")); // Output: true
+// console.log(checkString("abab"));   // Output: false
+// console.log(checkString("bbb"));    // Output: true
