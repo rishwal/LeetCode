@@ -1,0 +1,53 @@
+# Problem: Count Elements with Strictly Smaller and Greater Neighbors
+
+Given an integer array `nums`, return the number of elements that have both a strictly smaller and a strictly greater element appear in `nums`.
+
+## Example
+
+### Example 1:
+
+Input: `nums = [11,7,2,15]`
+
+Output: `2`
+
+Explanation: 
+- The element `7` has the element `2` strictly smaller than it and the element `11` strictly greater than it.
+- Element `11` has element `7` strictly smaller than it and element `15` strictly greater than it.
+In total there are `2` elements having both a strictly smaller and a strictly greater element appear in `nums`.
+
+### Example 2:
+
+Input: `nums = [-3,3,3,90]`
+
+Output: `2`
+
+Explanation: 
+- The element `3` has the element `-3` strictly smaller than it and the element `90` strictly greater than it.
+Since there are two elements with the value `3`, in total there are `2` elements having both a strictly smaller and a strictly greater element appear in `nums.
+
+## Solution
+
+```javascript
+/**
+ * Counts the number of elements in the array that have both a strictly smaller
+ * and a strictly greater element in the array.
+ * 
+ * @param {number[]} nums - The input array of integers.
+ * @returns {number} - The count of elements with both smaller and greater neighbors.
+ */
+var countElements = function(nums) {
+    let min = Math.min(...nums);
+    let max = Math.max(...nums);
+    let count = 0;
+
+    nums.forEach((item, index) => {
+        if (item > min && item < max) {
+            count++;
+        }
+    });
+
+    return count;
+};
+```
+
+Feel free to use this code in your projects or contribute to its improvement! If you have any questions or suggestions, please don't hesitate to reach out. Happy coding! 🚀
