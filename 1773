@@ -1,0 +1,74 @@
+Certainly! Here is a README file for your LeetCode solution, including information about the time and space complexity:
+
+```markdown
+# LeetCode Solution: Count Items Matching a Rule
+
+## Problem Description
+
+You are given an array `items`, where each `items[i] = [typei, colori, namei]` describes the type, color, and name of the ith item. You are also given a rule represented by two strings, `ruleKey` and `ruleValue`.
+
+The ith item is said to match the rule if one of the following is true:
+
+- `ruleKey == "type"` and `ruleValue == typei`.
+- `ruleKey == "color"` and `ruleValue == colori`.
+- `ruleKey == "name"` and `ruleValue == namei`.
+
+Return the number of items that match the given rule.
+
+### Example 1
+
+Input:
+```javascript
+items = [["phone","blue","pixel"],["computer","silver","lenovo"],["phone","gold","iphone"]],
+ruleKey = "color", ruleValue = "silver"
+```
+Output:
+```javascript
+1
+```
+Explanation: There is only one item matching the given rule, which is ["computer","silver","lenovo"].
+
+### Example 2
+
+Input:
+```javascript
+items = [["phone","blue","pixel"],["computer","silver","phone"],["phone","gold","iphone"]],
+ruleKey = "type", ruleValue = "phone"
+```
+Output:
+```javascript
+2
+```
+Explanation: There are only two items matching the given rule, which are ["phone","blue","pixel"] and ["phone","gold","iphone"]. Note that the item ["computer","silver","phone"] does not match.
+
+## Solution
+
+```javascript
+var countMatches = function (items, ruleKey, ruleValue) {
+    let count = 0;
+    switch (ruleKey) {
+        case "type": items.forEach(item => { item[0] === ruleValue && count++ })
+            break;
+        case "color": items.forEach(item => { item[1] === ruleValue && count++ })
+            break;
+        case "name": items.forEach(item => { item[2] === ruleValue && count++ })
+            break;
+        default: count = 0;
+            break;
+    }
+    return count;
+};
+
+console.log(countMatches(items, ruleKey, ruleValue));
+```
+
+## Time and Space Complexity
+
+### Time Complexity
+The time complexity of the solution is O(n), where n is the number of items in the array. This is because the solution iterates through each item once.
+
+### Space Complexity
+The space complexity is O(1) as the solution uses only a constant amount of space regardless of the input size.
+```
+
+Feel free to customize this README file as needed.
