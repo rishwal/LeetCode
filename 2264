@@ -1,0 +1,78 @@
+Certainly! Below is a simple README template that you can use to document your solution and share it on GitHub:
+
+```markdown
+# Largest 3-Same-Digit Number in String
+
+## Problem Description
+
+You are given a string `num` representing a large integer. An integer is good if it meets the following conditions:
+
+- It is a substring of `num` with a length of 3.
+- It consists of only one unique digit.
+
+Return the maximum good integer as a string or an empty string "" if no such integer exists.
+
+### Example 1
+
+Input:
+```javascript
+num = "6777133339"
+```
+
+Output:
+```javascript
+"777"
+```
+
+Explanation:
+There are two distinct good integers: "777" and "333". "777" is the largest, so we return "777".
+
+### Example 2
+
+Input:
+```javascript
+num = "2300019"
+```
+
+Output:
+```javascript
+"000"
+```
+
+Explanation:
+"000" is the only good integer.
+
+### Example 3
+
+Input:
+```javascript
+num = "42352338"
+```
+
+Output:
+```javascript
+""
+```
+
+Explanation:
+No substring of length 3 consists of only one unique digit. Therefore, there are no good integers.
+
+## Solution
+
+```javascript
+/**
+ * @param {string} num
+ * @return {string}
+ */
+var largestGoodInteger = function (num) {
+    let out = '';
+    for (let i = 0; i < num.length - 2; i++) {
+        if (num[i] === num[i + 2]) {
+            if (out < num[i])
+                out = num[i];
+        }
+    }
+
+    return (out + out + out);
+};
+```
