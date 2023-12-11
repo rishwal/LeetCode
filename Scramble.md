@@ -1,13 +1,14 @@
-Given a string and an array of index numbers, return the characters of the string rearranged to be in the order specified by the accompanying array.
+## Given a string and an array of index numbers, return the characters of the string rearranged to be in the order specified by the accompanying array.
 
-Ex:
+## Ex:
 
 scramble('abcd', [0,3,1,2]) -> 'acdb'
 
 
-#My answer
+## My answer
 
 
+```javascript
 
 var firstPalindrome = function (words) {
     for (x of words) {
@@ -20,3 +21,5 @@ var firstPalindrome = function (words) {
 };
 const words = ["abc", "car", "ada", "racecar", "cool"];
 console.log(firstPalindrome(words));
+
+```
