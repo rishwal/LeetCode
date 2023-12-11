@@ -1,9 +1,11 @@
-## Given a string and an array of index numbers, return the characters of the string rearranged to be in the order specified by the accompanying array.
+# Scramble
+
+
+**Given a string and an array of index numbers, return the characters of the string rearranged to be in the order specified by the accompanying array.**
 
 ## Ex:
 
-scramble('abcd', [0,3,1,2]) -> 'acdb'
-
+**scramble('abcd', [0,3,1,2]) -> 'acdb'**
 
 ## My answer
 
