@@ -30,6 +30,6 @@ These solutions are provided for educational purposes. LeetCode encourages users
 ## Author 👤
 
 - Rishwal tp
-- GitHub: [Your GitHub Profile](https://github.com/rishwal) 🌐
+- GitHub: [rishwal👩🏻‍💻](https://github.com/rishwal) 🌐
 
 Happy Coding! 🚀
