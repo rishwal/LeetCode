@@ -5,11 +5,11 @@ This repository contains my daily solutions to LeetCode questions. I prefer to s
 
 ## Structure
 
-- Each file is named with the LeetCode question number (e.g., `1.md` or `219.md`).
-- Each file includes the full LeetCode question, sample examples (test cases with output and explanation), and my approach to solving the problem (with detailed explanation).
+- Each file is named with the LeetCode question number (e.g., `1.md`).
+- Each file includes the full LeetCode question, sample examples (test cases with output), and my approach to solving the problem (with detailed explanation).
 - The time and space complexity of each solution are also provided.
 
-## Contributions 🤝
+## Contributions 🫱🏼‍🫲🏽
 
 Feel free to contribute by adding more solutions, improving existing solutions, or providing alternative approaches. If you have a better solution, make a pull request!
 
@@ -27,9 +27,9 @@ Feel free to contribute by adding more solutions, improving existing solutions, 
 
 These solutions are provided for educational purposes. LeetCode encourages users to solve problems independently before checking the solutions.
 
-## Author 👤
+## Author 🧑🏻‍💻
 
 - Rishwal tp
-- GitHub: [rishwal👩🏻‍💻](https://github.com/rishwal) 🌐
+- GitHub: [rishwal](https://github.com/rishwal) 🌐
 
 Happy Coding! 🚀
